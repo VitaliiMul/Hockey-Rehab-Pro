@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hockey Rehab Pro pricing — Free Education Hub or HIRP at $24/month. Simple, clear pricing for hockey ACL recovery.">
+  <title>Pricing — Hockey Rehab Pro</title>
+  <link rel="icon" type="image/png" href="./Screenshot%202026-05-06%20193714.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Condensed:wght@700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+
+  <header class="nav" id="nav">
+    <div class="nav__inner container">
+      <a href="./index.html" class="nav__logo" aria-label="Hockey Rehab Pro home">
+        <span class="logo-clip nav__logo-clip">
+          <img src="./Screenshot%202026-05-06%20193714.png" alt="Hockey Rehab Pro" width="56" height="56">
+        </span>
+        <span class="nav__logo-text">Hockey<br>Rehab Pro</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary navigation">
+        <a href="./services.html"  class="nav__link">Services</a>
+        <a href="./program.html"   class="nav__link">HIRP</a>
+        <a href="./about.html"     class="nav__link">About</a>
+        <a href="./pricing.html"   class="nav__link is-active">Pricing</a>
+        <a href="./contact.html"   class="nav__link">Contact</a>
+        <a href="./contact.html" class="nav__link nav__link--cta">Book Clinic</a>
+      </nav>
+      <button class="nav__hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+        <span class="nav__hamburger-bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+    <button class="mobile-menu__close" id="mobileMenuClose" aria-label="Close menu">&times;</button>
+    <nav class="mobile-menu__nav">
+      <a href="./index.html"    class="mobile-menu__link">Home</a>
+      <a href="./services.html" class="mobile-menu__link">Services</a>
+      <a href="./program.html"  class="mobile-menu__link">HIRP Program</a>
+      <a href="./about.html"    class="mobile-menu__link">About</a>
+      <a href="./pricing.html"  class="mobile-menu__link">Pricing</a>
+      <a href="./contact.html"  class="mobile-menu__link">Contact</a>
+      <a href="./contact.html" class="mobile-menu__link mobile-menu__link--cta">Book Clinic Session</a>
+    </nav>
+  </div>
+  <div class="mobile-menu__overlay" id="menuOverlay"></div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <p class="page-hero__eyebrow">Pricing</p>
+        <h1 class="page-hero__title">Simple, Clear Pricing</h1>
+        <p class="page-hero__sub">
+          In-person clinic, structured online program, or free education hub &mdash; start wherever makes sense for you.
+        </p>
+      </div>
+    </section>
+
+    <!-- PRICING CARDS -->
+    <section class="pricing" aria-labelledby="pricing-heading">
+      <div class="container">
+        <div class="section-header section-header--light">
+          <p class="section-header__eyebrow">Choose Your Path</p>
+          <h2 class="section-header__heading" id="pricing-heading">Three Options</h2>
+        </div>
+        <div class="pricing__grid" style="grid-template-columns: repeat(3,1fr); max-width: 1100px;">
+
+          <div class="pricing-card pricing-card--free">
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Free Hub</h3>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">$0</span>
+                <span class="pricing-card__period">/ forever</span>
+              </div>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Injury Prevention Lessons</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Mobility Fundamentals</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Sample Training Plans</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Skool Community Access</li>
+              <li class="pricing-card__feature--dim"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Structured Phase Programs</li>
+              <li class="pricing-card__feature--dim"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Objective Testing Protocols</li>
+              <li class="pricing-card__feature--dim"><i class="fa-solid fa-xmark" aria-hidden="true"></i> Return-to-Ice Criteria</li>
+            </ul>
+            <a href="#" class="btn btn--outline pricing-card__cta">Join for Free</a>
+          </div>
+
+          <div class="pricing-card pricing-card--hirp pricing-card--featured">
+            <div class="pricing-card__popular-tag">Online Program</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">HIRP</h3>
+              <p class="pricing-card__subname">Hockey Injury Recovery Program</p>
+              <div class="pricing-card__price">
+                <span class="pricing-card__amount">$24</span>
+                <span class="pricing-card__period">/ month</span>
+              </div>
+              <p class="pricing-card__note">Cancel anytime &mdash; train from anywhere</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Everything in Free Hub</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 9&ndash;12+ Month ACL Roadmap</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Phase-by-Phase Progression</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Objective Testing Benchmarks</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Hockey-Specific Metrics</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Return-to-Ice Criteria</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Strength &amp; Power Protocols</li>
+            </ul>
+            <a href="https://hockeyrehabpro.com/start" class="btn btn--teal pricing-card__cta" target="_blank" rel="noopener noreferrer">Get HIRP Access</a>
+            <p class="pricing-card__guarantee">
+              <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+              Evidence-based. Cancel anytime.
+            </p>
+          </div>
+
+          <div class="pricing-card pricing-card--hirp pricing-card--featured" style="border-color: #009cda; border-width: 3px;">
+            <div class="pricing-card__popular-tag" style="background: #009cda;">In-Person Clinic</div>
+            <div class="pricing-card__header">
+              <h3 class="pricing-card__name">Clinic</h3>
+              <p class="pricing-card__subname">Calgary, AB &mdash; 1-on-1 with Vitalii</p>
+              <div class="pricing-card__price" style="font-size: 1.5rem; padding: 1rem 0;">
+                <span style="font-size: 1rem; opacity: 0.7; font-family: Roboto, sans-serif; font-weight: 400;">Contact for pricing</span>
+              </div>
+              <p class="pricing-card__note">Advanced rehab equipment &amp; technology</p>
+            </div>
+            <ul class="pricing-card__features">
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> 1-on-1 Sessions with Vitalii</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Advanced Rehab Equipment</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Personalized to Your Injury</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Hands-On Assessment</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Hockey-Specific Training</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Full HIRP Program Access</li>
+              <li><i class="fa-solid fa-check" aria-hidden="true"></i> Ongoing Progress Tracking</li>
+            </ul>
+            <a href="./contact.html" class="btn btn--teal pricing-card__cta">Book a Session</a>
+            <p class="pricing-card__guarantee">
+              <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
+              Located in Calgary, Alberta.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS (brief) -->
+    <section class="testimonials" aria-labelledby="testimonials-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Social Proof</p>
+          <h2 class="section-header__heading" id="testimonials-heading">Athletes Trust HIRP</h2>
+        </div>
+        <div class="testimonials__aggregate">
+          <div class="testimonials__stars" aria-label="4.9 out of 5 stars overall">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half-stroke"></i>
+          </div>
+          <p class="testimonials__aggregate-score">4.9 / 5</p>
+          <p class="testimonials__aggregate-count">From hundreds of satisfied clients</p>
+        </div>
+        <!-- NOTE: Replace with real testimonials -->
+        <div class="testimonials__grid">
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-card__quote">"At $24 a month this is the best investment I made in my recovery. Generic PT was costing me 10x this and didn't understand hockey at all."</p>
+            <footer class="testimonial-card__footer"><p class="testimonial-card__name">— Midget AAA Player</p></footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-card__quote">"The structure is what makes HIRP worth it. I knew exactly what to do each week, passed every test, and came back stronger than before my injury."</p>
+            <footer class="testimonial-card__footer"><p class="testimonial-card__name">— Junior A Forward</p></footer>
+          </blockquote>
+          <blockquote class="testimonial-card">
+            <div class="testimonial-card__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="testimonial-card__quote">"I was hesitant to pay for an online program but HIRP is genuinely different. The hockey-specific benchmarks are things I couldn't find anywhere else."</p>
+            <footer class="testimonial-card__footer"><p class="testimonial-card__name">— Defenceman, College Hockey</p></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-header__eyebrow">Common Questions</p>
+          <h2 class="section-header__heading" id="faq-heading">FAQ</h2>
+        </div>
+        <div class="faq__list" role="list">
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              What is the in-person clinic and where is it?
+              <i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer">
+              <p>The Hockey Rehab Pro clinic is located in Calgary, Alberta. It's an in-person rehab facility equipped with advanced rehabilitation equipment and technology. Sessions are 1-on-1 with Vitalii, fully personalized to your injury, position, and recovery stage. Contact us to book a session and get pricing details.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              Do I need a surgeon's clearance before starting?
+              <i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Yes. HIRP is designed to be used alongside your medical team, not instead of them. You should always follow your surgeon's post-op instructions. HIRP provides the structured, hockey-specific programming that your surgeon's office typically doesn't have time to give you.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              What if I had a different knee injury (not ACL)?
+              <i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer">
+              <p>HIRP is built specifically around ACL recovery. While many of the principles apply to other lower-body injuries, the program's structure, testing protocols, and return-to-ice criteria are designed for ACL rehab in hockey athletes.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              Can I cancel anytime?
+              <i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Yes, absolutely. HIRP is a month-to-month subscription with no contracts or cancellation fees. Cancel whenever you want from your account settings.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              How is HIRP different from regular physical therapy?
+              <i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer">
+              <p>Standard PT is built for the general population. HIRP is built for hockey. The benchmarks, movement patterns, testing criteria, and return-to-play standards are all specific to what the ice actually demands — edge work, explosive starts, stops, and contact. Most PT clinics simply don't have hockey-specific programming.</p>
+            </div>
+          </div>
+
+          <div class="faq__item" role="listitem">
+            <button class="faq__question" aria-expanded="false">
+              What's the difference between the Free Hub and HIRP?
+              <i class="fa-solid fa-plus faq__icon" aria-hidden="true"></i>
+            </button>
+            <div class="faq__answer">
+              <p>The Free Hub gives you educational content, mobility fundamentals, and injury prevention lessons — great for understanding your recovery. HIRP is the complete, structured program: a 9–12+ month phase-by-phase roadmap with objective testing, hockey-specific benchmarks, and clear return-to-ice criteria. The Hub helps you learn; HIRP gets you back on the ice.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <div class="container">
+        <h2 class="cta-banner__heading">Start Your Recovery Today</h2>
+        <p class="cta-banner__sub">Book an in-person clinic session or start with HIRP online from anywhere.</p>
+        <div class="cta-banner__btns">
+          <a href="./contact.html" class="btn btn--primary btn--lg">Book Clinic Session</a>
+          <a href="https://hockeyrehabpro.com/start" class="btn btn--outline btn--lg" target="_blank" rel="noopener noreferrer">Get HIRP &mdash; $24/mo</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <span class="logo-clip footer__logo-clip">
+            <img src="./Screenshot%202026-05-06%20193714.png" alt="Hockey Rehab Pro" width="70" height="70">
+          </span>
+          <p class="footer__tagline">Structured ACL rehab built for hockey players. Evidence-based. Hockey-specific. Built by Vitalii.</p>
+          <div class="footer__social">
+            <a href="https://youtube.com/@hockeyrehabpro" target="_blank" rel="noopener noreferrer" aria-label="YouTube" class="footer__social-link"><i class="fa-brands fa-youtube" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer__social-link"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
+            <a href="#" target="_blank" rel="noopener noreferrer" aria-label="TikTok" class="footer__social-link"><i class="fa-brands fa-tiktok" aria-hidden="true"></i></a>
+          </div>
+        </div>
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-heading">Programs</h4>
+          <ul class="footer__nav-list">
+            <li><a href="https://hockeyrehabpro.com/start" target="_blank" rel="noopener noreferrer" class="footer__nav-link">HIRP &mdash; $24/month</a></li>
+            <li><a href="#" class="footer__nav-link">Free Education Hub</a></li>
+            <li><a href="./pricing.html" class="footer__nav-link">Pricing</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-heading">Learn</h4>
+          <ul class="footer__nav-list">
+            <li><a href="https://youtube.com/@hockeyrehabpro" target="_blank" rel="noopener noreferrer" class="footer__nav-link">YouTube Channel</a></li>
+            <li><a href="./contact.html" class="footer__nav-link">ACL Checklist (Free)</a></li>
+            <li><a href="./services.html" class="footer__nav-link">How It Works</a></li>
+          </ul>
+        </div>
+        <div class="footer__nav-group">
+          <h4 class="footer__nav-heading">Company</h4>
+          <ul class="footer__nav-list">
+            <li><a href="./about.html" class="footer__nav-link">About Vitalii</a></li>
+            <li><a href="./contact.html" class="footer__nav-link">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="footer__copy">&copy; <span id="footerYear"></span> Hockey Rehab Pro. All rights reserved.</p>
+        <div class="footer__legal">
+          <a href="https://hockeyrehabpro.com/policies/privacy-policy" target="_blank" rel="noopener noreferrer" class="footer__legal-link">Privacy Policy</a>
+          <a href="https://hockeyrehabpro.com/policies/terms-of-service" target="_blank" rel="noopener noreferrer" class="footer__legal-link">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
