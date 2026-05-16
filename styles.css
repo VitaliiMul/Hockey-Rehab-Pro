@@ -13,12 +13,14 @@
   overflow: hidden;
   flex-shrink: 0;
   line-height: 0;
+  border: 2px solid var(--color-primary);
 }
 
 .logo-clip img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center center;
   display: block;
 }
 
@@ -406,6 +408,68 @@ button {
   font-size: var(--text-base);
 }
 
+/* ============================================================
+   LIQUID GLASS BUTTON
+   Ported from Apple Tahoe glass effect — backdrop-filter + SVG displacement
+   ============================================================ */
+.btn--glass {
+  position: relative;
+  background: transparent !important;
+  border-color: transparent !important;
+  color: rgba(255, 255, 255, 0.95) !important;
+  overflow: visible;
+  z-index: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  letter-spacing: 0.01em;
+}
+
+.btn--glass::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(16px) saturate(180%) url(#liquid-glass-global);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.18),
+    inset 1.8px 3px 0px -2px rgba(255, 255, 255, 0.82),
+    inset -2px -2px 0px -2px rgba(255, 255, 255, 0.62),
+    inset -3px -8px 1px -6px rgba(255, 255, 255, 0.42),
+    inset -0.3px -1px 4px 0px rgba(0, 0, 0, 0.12),
+    inset -1.5px 2.5px 0px -2px rgba(0, 0, 0, 0.20),
+    inset 0px 3px 4px -2px rgba(0, 0, 0, 0.20),
+    inset 2px -6.5px 1px -4px rgba(0, 0, 0, 0.10),
+    0px 1px 5px 0px rgba(0, 0, 0, 0.18),
+    0px 8px 28px 0px rgba(0, 0, 0, 0.18);
+  z-index: -1;
+  pointer-events: none;
+  transition: background 400ms cubic-bezier(1, 0, 0.4, 1), box-shadow 400ms cubic-bezier(1, 0, 0.4, 1);
+}
+
+.btn--glass:hover::before {
+  background: rgba(255, 255, 255, 0.13);
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 255, 255, 0.22),
+    inset 1.8px 3px 0px -2px rgba(255, 255, 255, 0.90),
+    inset -2px -2px 0px -2px rgba(255, 255, 255, 0.70),
+    inset -3px -8px 1px -6px rgba(255, 255, 255, 0.50),
+    inset -0.3px -1px 4px 0px rgba(0, 0, 0, 0.10),
+    inset -1.5px 2.5px 0px -2px rgba(0, 0, 0, 0.18),
+    inset 0px 3px 4px -2px rgba(0, 0, 0, 0.18),
+    inset 2px -6.5px 1px -4px rgba(0, 0, 0, 0.08),
+    0px 2px 8px 0px rgba(0, 0, 0, 0.22),
+    0px 12px 36px 0px rgba(0, 0, 0, 0.22);
+}
+
+.btn--glass:hover {
+  transform: scale(1.03) translateY(-1px) !important;
+}
+
+.btn--glass:active {
+  transform: scale(0.97) !important;
+}
+
 /* --- Section Headers -------------------------------------- */
 .section-header {
   text-align: center;
@@ -480,8 +544,8 @@ button {
 }
 
 .nav__logo-clip {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
 }
 
 .nav__logo-img {
@@ -687,7 +751,14 @@ button {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #06080f 0%, #0a1828 50%, #060a12 100%);
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0.93) 0%,
+      rgba(0, 0, 0, 0.80) 50%,
+      rgba(0, 0, 0, 0.58) 100%
+    ),
+    url('./hero-photo.jpg') right center / cover no-repeat;
 }
 
 /* Diagonal teal accent stripe — gives the Bauer angled graphic feel */
