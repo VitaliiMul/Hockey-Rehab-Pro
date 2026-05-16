@@ -22,6 +22,7 @@ window.addEventListener('scroll', () => {
 
 if (window.scrollY > 50) nav.classList.add('scrolled');
 
+
 /* --- Mobile menu ------------------------------------------ */
 const hamburger   = document.getElementById('hamburger');
 const mobileMenu  = document.getElementById('mobileMenu');
@@ -84,7 +85,7 @@ revealStyle.textContent = '.is-revealed { opacity: 1 !important; transform: none
 document.head.appendChild(revealStyle);
 
 const revealEls = document.querySelectorAll(
-  '.service-card, .step, .program__feature, .testimonial-card, .pricing-card, .about__grid, .youtube-cta__inner, .trust-bar__item, .faq__item'
+  '.service-card, .program__feature, .testimonial-card, .pricing-card, .about__grid, .youtube-cta__inner, .trust-bar__item, .faq__item'
 );
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -103,6 +104,45 @@ revealEls.forEach((el, i) => {
   el.style.transition = 'opacity 0.55s ease, transform 0.55s ease';
   revealObserver.observe(el);
 });
+
+/* --- Steps: slide in from left, staggered ----------------- */
+const stepEls = document.querySelectorAll('.step');
+const connectorEls = document.querySelectorAll('.step__connector');
+
+const stepObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('is-revealed');
+      stepObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+
+stepEls.forEach((el, i) => {
+  el.style.opacity = '0';
+  el.style.transform = 'translateX(-48px)';
+  el.style.transitionDelay = `${i * 0.18}s`;
+  el.style.transition = 'opacity 0.6s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.6s cubic-bezier(0.25,0.46,0.45,0.94)';
+  stepObserver.observe(el);
+});
+
+connectorEls.forEach((el, i) => {
+  el.style.transform = 'scaleY(0)';
+  el.style.transformOrigin = 'top';
+  el.style.transitionDelay = `${i * 0.18 + 0.3}s`;
+  el.style.transition = 'transform 0.4s ease';
+});
+
+const connectorObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.transform = 'scaleY(1)';
+      connectorObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+connectorEls.forEach(el => connectorObserver.observe(el));
 
 /* --- FAQ accordion ---------------------------------------- */
 document.querySelectorAll('.faq__question').forEach(btn => {
