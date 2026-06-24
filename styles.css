@@ -524,9 +524,17 @@ button {
 }
 
 .nav__logo-img {
-  height: 58px;
+  height: 72px;
   width: auto;
   display: block;
+}
+
+.nav__flag-img {
+  height: 36px;
+  width: auto;
+  display: block;
+  border-radius: 3px;
+  mix-blend-mode: screen;
 }
 
 .nav__logo-text {
@@ -1598,7 +1606,7 @@ button {
 }
 
 .footer__logo {
-  height: 52px;
+  height: 70px;
   width: auto;
   display: block;
   margin-bottom: var(--space-sm);
