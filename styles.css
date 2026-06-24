@@ -334,6 +334,8 @@ button {
   border-radius: var(--radius);
   border: 2px solid transparent;
   cursor: pointer;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
   transition:
     background var(--transition),
     color var(--transition),
@@ -731,7 +733,6 @@ button {
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
   background:
     linear-gradient(
       to right,
@@ -826,6 +827,8 @@ button {
   display: flex;
   gap: var(--space-sm);
   flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
 }
 
 /* ============================================================
