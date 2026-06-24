@@ -220,9 +220,9 @@
   --font-heading: 'Roboto Condensed', Impact, Helvetica, sans-serif;
   --font-heading-weight: 900;
 
-  --color-primary: #cc0000;
-  --color-primary-dark: #aa0000;
-  --color-primary-light: #ff4444;
+  --color-primary: #888888;
+  --color-primary-dark: #555555;
+  --color-primary-light: #bbbbbb;
 
   --color-dark-900: #0a0a0a;
   --color-dark-800: #111111;
@@ -234,7 +234,7 @@
   --color-text-muted-dark: rgba(255, 255, 255, 0.6);
   --color-text-muted-light: #666666;
   --color-star: #f5a623;
-  --color-success: #cc0000;
+  --color-success: #888888;
   --color-error: #e53935;
 
   --space-xs: 0.5rem;
@@ -745,7 +745,7 @@ button {
   background: linear-gradient(
     145deg,
     transparent 45%,
-    rgba(204, 0, 0, 0.04) 45%
+    rgba(128, 128, 128, 0.04) 45%
   );
   pointer-events: none;
 }
@@ -775,8 +775,8 @@ button {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background: rgba(204, 0, 0, 0.12);
-  border: 1px solid rgba(204, 0, 0, 0.4);
+  background: rgba(128, 128, 128, 0.12);
+  border: 1px solid rgba(128, 128, 128, 0.4);
   color: var(--color-primary);
   font-size: var(--text-xs);
   font-weight: 700;
@@ -918,7 +918,7 @@ button {
   border-color: var(--color-primary);
   border-width: 3px;
   color: var(--color-white);
-  box-shadow: 0 0 0 1px rgba(204, 0, 0, 0.15), 0 12px 40px rgba(0, 0, 0, 0.35);
+  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.15), 0 12px 40px rgba(0, 0, 0, 0.35);
 }
 
 .service-card__badge {
@@ -1199,7 +1199,7 @@ button {
 .program__feature:hover {
   transform: translateY(-4px);
   background: var(--color-dark-600);
-  box-shadow: -4px 0 20px rgba(204, 0, 0, 0.18);
+  box-shadow: -4px 0 20px rgba(128, 128, 128, 0.18);
 }
 
 .program__feature-icon {
@@ -1380,13 +1380,13 @@ button {
 .pricing-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
-  border-color: rgba(204, 0, 0, 0.4);
+  border-color: rgba(128, 128, 128, 0.4);
 }
 
 .pricing-card--featured {
   border-color: var(--color-primary);
   transform: scale(1.04);
-  box-shadow: 0 20px 60px rgba(204, 0, 0, 0.2);
+  box-shadow: 0 20px 60px rgba(128, 128, 128, 0.2);
 }
 
 .pricing-card--featured:hover {
@@ -1906,7 +1906,7 @@ button {
   justify-content: center;
   font-size: 1.4rem;
   color: #fff;
-  box-shadow: 0 6px 24px rgba(204, 0, 0, 0.5);
+  box-shadow: 0 6px 24px rgba(128, 128, 128, 0.5);
   transition: transform 0.2s ease, background 0.2s ease;
   position: relative;
 }
