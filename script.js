@@ -183,7 +183,7 @@ if (newsletterForm) {
 function showFeedback(message, type) {
   if (!newsletterFeedback) return;
   newsletterFeedback.textContent = message;
-  newsletterFeedback.style.color = type === 'error' ? '#e53935' : '#009cda';
+  newsletterFeedback.style.color = type === 'error' ? '#e53935' : '#1b4f8a';
   newsletterFeedback.style.fontWeight = '600';
 }
 
@@ -191,7 +191,7 @@ function showFeedback(message, type) {
    CHATBOT WIDGET
    ============================================================ */
 (function () {
-  const LOGO = './Screenshot%202026-05-06%20193714.png';
+  const LOGO = './ac713e54-7dcd-4637-b064-36997cf8b8b6.png';
 
   const prompts = [
     {

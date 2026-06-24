@@ -27,7 +27,7 @@
    ============================================================ */
 .page-hero {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.88)),
+    linear-gradient(rgba(10, 25, 55, 0.92), rgba(10, 25, 55, 0.92)),
     url('./hero-photo.jpg') center / cover no-repeat;
   padding: calc(var(--nav-height) + var(--space-xl)) 0 var(--space-xl);
   border-bottom: 3px solid var(--color-primary);
@@ -220,21 +220,21 @@
   --font-heading: 'Roboto Condensed', Impact, Helvetica, sans-serif;
   --font-heading-weight: 900;
 
-  --color-primary: #888888;
-  --color-primary-dark: #555555;
-  --color-primary-light: #bbbbbb;
+  --color-primary: #1b4f8a;
+  --color-primary-dark: #113565;
+  --color-primary-light: #4a7eb8;
 
-  --color-dark-900: #0a0a0a;
-  --color-dark-800: #111111;
-  --color-dark-700: #1a1a1a;
-  --color-dark-600: #2a2a2a;
-  --color-surface: #f5f5f5;
+  --color-dark-900: #0c1f38;
+  --color-dark-800: #122848;
+  --color-dark-700: #1c3556;
+  --color-dark-600: #2a4d72;
+  --color-surface: #f0f5fb;
   --color-white: #ffffff;
   --color-black: #000000;
   --color-text-muted-dark: rgba(255, 255, 255, 0.6);
-  --color-text-muted-light: #666666;
+  --color-text-muted-light: #555555;
   --color-star: #f5a623;
-  --color-success: #888888;
+  --color-success: #1b4f8a;
   --color-error: #e53935;
 
   --space-xs: 0.5rem;
@@ -479,7 +479,7 @@ button {
 }
 
 .section-header--light .section-header__heading {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .section-header__sub {
@@ -489,7 +489,7 @@ button {
 }
 
 .section-header--light .section-header__sub {
-  color: var(--color-text-muted-dark);
+  color: var(--color-text-muted-light);
 }
 
 /* ============================================================
@@ -736,9 +736,9 @@ button {
   background:
     linear-gradient(
       to right,
-      rgba(0, 0, 0, 0.93) 0%,
-      rgba(0, 0, 0, 0.80) 50%,
-      rgba(0, 0, 0, 0.58) 100%
+      rgba(10, 25, 55, 0.94) 0%,
+      rgba(10, 25, 55, 0.78) 55%,
+      rgba(10, 25, 55, 0.45) 100%
     ),
     url('./hero-photo.jpg') right center / cover no-repeat;
 }
@@ -835,8 +835,8 @@ button {
    TRUST BAR
    ============================================================ */
 .trust-bar {
-  background: var(--color-dark-800);
-  border-bottom: 1px solid var(--color-dark-600);
+  background: var(--color-white);
+  border-bottom: 1px solid #dde6f0;
   padding: var(--space-md) 0;
 }
 
@@ -877,18 +877,18 @@ button {
 }
 
 .trust-bar__label {
-  color: var(--color-text-muted-dark);
+  color: var(--color-text-muted-light);
   font-size: var(--text-sm);
 }
 
 .trust-bar__label strong {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .trust-bar__divider {
   width: 1px;
   height: 50px;
-  background: var(--color-dark-600);
+  background: #dde6f0;
 }
 
 /* ============================================================
@@ -919,17 +919,17 @@ button {
 }
 
 .service-card--featured {
-  background: var(--color-dark-900);
+  background: var(--color-white);
   border-color: var(--color-primary);
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .service-card--clinic {
-  background: var(--color-dark-900);
+  background: var(--color-white);
   border-color: var(--color-primary);
   border-width: 3px;
-  color: var(--color-white);
-  box-shadow: 0 0 0 1px rgba(128, 128, 128, 0.15), 0 12px 40px rgba(0, 0, 0, 0.35);
+  color: var(--color-black);
+  box-shadow: 0 4px 32px rgba(27, 79, 138, 0.12);
 }
 
 .service-card__badge {
@@ -970,7 +970,7 @@ button {
 }
 
 .service-card--featured .service-card__title {
-  color: var(--color-white);
+  color: var(--color-black);
 }
 
 .service-card__desc {
@@ -981,7 +981,7 @@ button {
 }
 
 .service-card--featured .service-card__desc {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--color-text-muted-light);
 }
 
 .service-card__features {
@@ -999,8 +999,8 @@ button {
 }
 
 .service-card--featured .service-card__features li {
-  border-color: rgba(255, 255, 255, 0.08);
-  color: rgba(255, 255, 255, 0.85);
+  border-color: rgba(0, 0, 0, 0.06);
+  color: var(--color-black);
 }
 
 .service-card__features .fa-check {
@@ -1016,7 +1016,7 @@ button {
    HOW IT WORKS
    ============================================================ */
 .how-it-works {
-  background: var(--color-dark-800);
+  background: var(--color-surface);
   padding: var(--space-xl) 0;
 }
 
@@ -1048,7 +1048,7 @@ button {
   font-weight: var(--font-heading-weight);
   font-size: var(--text-2xl);
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-black);
   margin-bottom: 0.25rem;
   line-height: 1.1;
 }
@@ -1063,7 +1063,7 @@ button {
 }
 
 .step__desc {
-  color: rgba(255, 255, 255, 0.65);
+  color: var(--color-text-muted-light);
   line-height: 1.65;
 }
 
@@ -1190,7 +1190,7 @@ button {
    PROGRAM DETAILS
    ============================================================ */
 .program {
-  background: var(--color-dark-900);
+  background: var(--color-white);
   padding: var(--space-xl) 0;
 }
 
@@ -1201,16 +1201,18 @@ button {
 }
 
 .program__feature {
-  background: var(--color-dark-700);
+  background: var(--color-white);
   padding: var(--space-md);
   border-left: 3px solid var(--color-primary);
-  transition: transform var(--transition), background var(--transition), box-shadow var(--transition);
+  border: 1px solid #dde6f0;
+  border-left: 3px solid var(--color-primary);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform var(--transition), box-shadow var(--transition);
 }
 
 .program__feature:hover {
   transform: translateY(-4px);
-  background: var(--color-dark-600);
-  box-shadow: -4px 0 20px rgba(128, 128, 128, 0.18);
+  box-shadow: 0 8px 28px rgba(27, 79, 138, 0.12);
 }
 
 .program__feature-icon {
@@ -1224,13 +1226,13 @@ button {
   font-weight: var(--font-heading-weight);
   font-size: var(--text-lg);
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-black);
   margin-bottom: var(--space-xs);
   line-height: 1.2;
 }
 
 .program__feature-desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-muted-light);
   font-size: var(--text-sm);
   line-height: 1.6;
 }
@@ -1323,10 +1325,10 @@ button {
    YOUTUBE CTA
    ============================================================ */
 .youtube-cta {
-  background: var(--color-dark-800);
+  background: var(--color-white);
   padding: var(--space-xl) 0;
-  border-top: 1px solid var(--color-dark-600);
-  border-bottom: 1px solid var(--color-dark-600);
+  border-top: 1px solid #dde6f0;
+  border-bottom: 1px solid #dde6f0;
 }
 
 .youtube-cta__inner {
@@ -1352,12 +1354,12 @@ button {
   font-weight: var(--font-heading-weight);
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-black);
   margin-bottom: 0.5rem;
 }
 
 .youtube-cta__desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-muted-light);
   font-size: var(--text-sm);
   line-height: 1.6;
   max-width: 500px;
@@ -1367,7 +1369,7 @@ button {
    PRICING
    ============================================================ */
 .pricing {
-  background: var(--color-dark-900);
+  background: var(--color-surface);
   padding: var(--space-xl) 0;
 }
 
@@ -1381,8 +1383,8 @@ button {
 }
 
 .pricing-card {
-  background: var(--color-dark-700);
-  border: 2px solid var(--color-dark-600);
+  background: var(--color-white);
+  border: 2px solid #dde6f0;
   padding: var(--space-lg) var(--space-md);
   position: relative;
   transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
@@ -1390,14 +1392,14 @@ button {
 
 .pricing-card:hover {
   transform: translateY(-6px);
-  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.35);
-  border-color: rgba(128, 128, 128, 0.4);
+  box-shadow: 0 16px 40px rgba(27, 79, 138, 0.12);
+  border-color: var(--color-primary-light);
 }
 
 .pricing-card--featured {
   border-color: var(--color-primary);
   transform: scale(1.04);
-  box-shadow: 0 20px 60px rgba(128, 128, 128, 0.2);
+  box-shadow: 0 8px 40px rgba(27, 79, 138, 0.18);
 }
 
 .pricing-card--featured:hover {
@@ -1428,7 +1430,7 @@ button {
 .pricing-card__header {
   margin-bottom: var(--space-md);
   padding-bottom: var(--space-md);
-  border-bottom: 1px solid var(--color-dark-600);
+  border-bottom: 1px solid #dde6f0;
 }
 
 .pricing-card__name {
@@ -1436,12 +1438,12 @@ button {
   font-weight: var(--font-heading-weight);
   font-size: var(--text-2xl);
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-black);
   margin-top: var(--space-sm);
 }
 
 .pricing-card__subname {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-text-muted-light);
   font-size: var(--text-xs);
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -1459,17 +1461,17 @@ button {
   font-family: var(--font-heading);
   font-weight: var(--font-heading-weight);
   font-size: 3.5rem;
-  color: var(--color-white);
+  color: var(--color-black);
   line-height: 1;
 }
 
 .pricing-card__period {
-  color: rgba(255, 255, 255, 0.5);
+  color: var(--color-text-muted-light);
   font-size: var(--text-sm);
 }
 
 .pricing-card__note {
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-muted-light);
   font-size: var(--text-xs);
   margin-top: 0.25rem;
 }
@@ -1483,13 +1485,13 @@ button {
   align-items: center;
   gap: 0.6rem;
   padding: 0.5rem 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.8);
+  color: var(--color-black);
 }
 
 .pricing-card__feature--dim {
-  color: rgba(255, 255, 255, 0.25) !important;
+  color: rgba(0, 0, 0, 0.3) !important;
 }
 
 .pricing-card__features .fa-check {
@@ -1498,7 +1500,7 @@ button {
 }
 
 .pricing-card__features .fa-xmark {
-  color: rgba(255, 255, 255, 0.2);
+  color: rgba(0, 0, 0, 0.2);
   flex-shrink: 0;
 }
 
@@ -1508,7 +1510,7 @@ button {
 
 .pricing-card__guarantee {
   text-align: center;
-  color: rgba(255, 255, 255, 0.4);
+  color: var(--color-text-muted-light);
   font-size: var(--text-xs);
   margin-top: var(--space-sm);
   display: flex;
@@ -1521,7 +1523,7 @@ button {
    NEWSLETTER
    ============================================================ */
 .newsletter {
-  background: var(--color-dark-800);
+  background: var(--color-surface);
   padding: var(--space-xl) 0;
   border-top: 3px solid var(--color-primary);
 }
@@ -1538,13 +1540,13 @@ button {
   font-weight: var(--font-heading-weight);
   font-size: clamp(1.5rem, 3vw, 2.5rem);
   text-transform: uppercase;
-  color: var(--color-white);
+  color: var(--color-black);
   line-height: 1.1;
   margin-bottom: var(--space-sm);
 }
 
 .newsletter__desc {
-  color: rgba(255, 255, 255, 0.6);
+  color: var(--color-text-muted-light);
   font-size: var(--text-sm);
   line-height: 1.65;
 }
@@ -1556,9 +1558,9 @@ button {
 .newsletter__input {
   width: 100%;
   padding: 0.875rem 1rem;
-  background: var(--color-dark-700);
-  border: 1px solid var(--color-dark-600);
-  color: var(--color-white);
+  background: var(--color-white);
+  border: 1px solid #c8d8ea;
+  color: var(--color-black);
   font-family: var(--font-body);
   font-size: var(--text-base);
   border-radius: var(--radius);
@@ -1571,7 +1573,7 @@ button {
 }
 
 .newsletter__input::placeholder {
-  color: rgba(255, 255, 255, 0.3);
+  color: #aaa;
 }
 
 .newsletter__submit {
@@ -1580,7 +1582,7 @@ button {
 }
 
 .newsletter__disclaimer {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--color-text-muted-light);
   font-size: var(--text-xs);
   text-align: center;
 }
